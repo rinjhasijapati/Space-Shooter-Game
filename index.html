@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <style>
+        #canvas {
+            background-image: url('./images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body style="
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ">
+    <canvas id="canvas" width="500" height="700" style="background-color: black;
+    border: 1px solid white"></canvas>
+
+   <!-- <button id="restartBtn" style="background-image: url('/images/restart.png'); background-size: cover; width: 50px; height: 50px;"></button>
+-->
+    <script src="Enemy.js"></script>
+    <script src="Bullet.js"></script>
+    <script src="Player.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
