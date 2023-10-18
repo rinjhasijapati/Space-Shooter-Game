@@ -38,6 +38,7 @@ class Bullet {
   
       if (!this.isDestroyed) {
         this.move();
+        
       } else {
         this.position.x = -100;
         this.position.y = -100;

@@ -1,6 +1,8 @@
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
 
+
+
 const restartBtn = document.getElementById("restartBtn");
 const player = new Player();
 let allBullets = [];

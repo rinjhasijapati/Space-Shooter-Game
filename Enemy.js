@@ -16,6 +16,8 @@ class Enemy {
       const images = ["./images/Asteroid1.png", "./images/Asteroid2.png"];
       this.image = new Image();
       this.image.src = images[Math.floor(Math.random() * 2)];
+      this.explosionSound = new Audio();
+      this.explosionSound.src="./sounds/shoot.mp3";
     }
   
     draw() {
@@ -43,6 +45,8 @@ class Enemy {
     dead() {
       this.velocity.y = 0;
       this.isDead = true;
+
+      this.explosionSound.play();
       setTimeout(() => {
         this.velocity.y = 0;
         this.position.y = -200;

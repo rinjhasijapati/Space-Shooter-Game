@@ -14,11 +14,11 @@ class Player {
         this.size = 80;
         this.image = new Image();
         this.image.src = "./images/ship5.png";
+        
     }
 
     draw() {
         c.beginPath();
-        c.fillStyle = "red";
         c.drawImage(
             this.image,
             this.position.x,
